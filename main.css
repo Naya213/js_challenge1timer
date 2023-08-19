@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+.count_box{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+}
+ul.count_box li{
+    list-style: none;
+    font-size: 40px;
+    padding: 0px 5px;
+}
+ul.count_box li:after{
+    box-sizing: border-box;
+    content: ":";
+    padding-left: 10px;
+    font-size: 20px;
+    width: 10px;
+    height: 10px;
+}
+ul.count_box li:last-child:after{
+    content: none;
+}
+button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+}
